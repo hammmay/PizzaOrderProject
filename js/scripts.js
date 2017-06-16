@@ -7,17 +7,21 @@ function Pizza (argument1, argument2){
 }
 
 Pizza.prototype.howPizzaPriceChanges = function() {
-  if (this.size === "Small - Table for one") {
+  if (this.size === "Small - Table for one" && this.toppings.length < 5) {
     this.price += (this.toppings.length * 2) ;
   }else{
-   if (this.size === "Medium - Best when shared with another") {
+   if (this.size === "Medium - Best when shared with another" && this.toppings.length < 5) {
      this.price += (5+ (this.toppings.length * 2)) ;
    }else{
-     if (this.size === "Large - You better have some friends over") {
+     if (this.size === "Large - You better have some friends over" && this.toppings.length < 5) {
        this.price += (10 + (this.toppings.length * 2)) ;
-       }
+     }else{
+       if (this.toppings.length >= 5) {
+         return alert("You have too many toppings! Seriously, our oven is crazy-tiny and we simply can't layer that much awesome onto one pie. Take off the toppings you don't need to get back down to 4 so we can give you an accurate price.")
+     }
      }
    }
+ }
    return this.price;
  }
 

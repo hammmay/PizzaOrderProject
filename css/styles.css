@@ -2,13 +2,48 @@
   display: none;
 }
 
-/*
-. {
-  cursor: pointer;
-  color: #0088cc;
+.details {
+  font-style: italic;
 }
 
-.:hover {
+.underBold {
+  font-weight: bold;
   text-decoration: underline;
 }
-*/
+
+.sidebar {
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 40%;
+  float: right;
+  background-color: #eac385;
+}
+
+.size-output {
+  font-style: italic;
+  font-size: small;
+}
+
+.toppings-output {
+  font-style: italic;
+}
+
+.price-output {
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color: #dd9d92
+/*  background-image: image("img/pizzabackground.gif"); */
+}
+
+.btn {
+    background-color: #eac385;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}

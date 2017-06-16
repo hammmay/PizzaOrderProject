@@ -13,12 +13,20 @@
         <h2>Adult-Child Pizza Shop</h2>
       </div>
 
-<br>
+        <div class="sidebar">
+          <div id="pizza-order-summary">
+            <h4><b>Order Summary:</b><h4>
+              <p>Pizza Size: <span class="size-output"></span></p>
+              <p>Toppings: <span class="toppings-output"></span></p>
+              <p>Total Price: $<span class="price-output"></span></p>
+              <img src="img/pizzacat.png" alt="A kitty wearing pizza.">
+          </div>
+        </div>
 
       <div>
           <form id="all-pizza-options">
             <h4>Pick your Pizza Size</h4>
-            <p>(Small $10, Medium $15, Large $20)</p>
+            <p class="details">(Small $10, Medium $15, Large $20)</p>
             <div class="radio">
               <label>
                 <input type="radio" name="size-of-pizza" value="Small - Table for one" checked>
@@ -38,42 +46,31 @@
               </label>
             </div>
 <br>
-            <h4>What toppings do you want?</h4>
-            <p>($2 per topping any size, but try keep it under 5... seriously)</p>
+            <h4>What do you want us to put on your pizza?</h4>
+            <p class="details">($2 per topping, any size, but try keep it under 5... seriously)</p>
             <div class="form-group">
+              <p class="underBold">"Meats":</p>
               <input type="checkbox" name="toppings-on-pizza" value="Strips "> Veggie Bacon
               <input type="checkbox" name="toppings-on-pizza" value="Loaf "> Neatloaf
               <input type="checkbox" name="toppings-on-pizza" value="Nuggets "> Chik'n Nuggets (Made only from real Chik'ns) <br>
+              <p class="underBold">Cheeses:</p>
               <input type="checkbox" name="toppings-on-pizza" value="Curds "> Cheddar Cheese Curds
               <input type="checkbox" name="toppings-on-pizza" value="Fried-Sticks "> Fried Mozzarella Sticks <br>
+              <p class="underBold">Additional Topping Choices:</p>
               <input type="checkbox" name="toppings-on-pizza" value="Mac "> Mac n' Cheese!
               <input type="checkbox" name="toppings-on-pizza" value="Tots "> Sweet Potato Tots
               <input type="checkbox" name="toppings-on-pizza" value="Poppers "> Jalapeno Poppers
               <input type="checkbox" name="toppings-on-pizza" value="Chips "> Sour Cream n' Onion Potato Chips
               <input type="checkbox" name="toppings-on-pizza" value="Egg "> Fried egg
               <input type="checkbox" name="toppings-on-pizza" value="Mash "> Mashed Taters <br>
+              <p class="underBold">Sauces:</p>
               <input type="checkbox" name="toppings-on-pizza" value="Dirty "> Dirty Brown Gravy
               <input type="checkbox" name="toppings-on-pizza" value="Spicy "> Sriracha
             </div>
-<br>
 
-            <button type="submit" class="btn">Show Me The Price</button>
+            <button type="submit" class="btn">Show me my order</button>
 
           </form>
-
-          <div id="pizza-order-summary">
-            <h4><b>Order Summary:</b><h4>
-              <p>Pizza Size: <span class="size-output"></span></p>
-              <p>Toppings: <span class="toppings-output"></span></p>
-              <p>Total Price: $<span class="price-output"></span></p>
-          </div>
-
-<!--      <ul id="prices">
-
-          </ul>
--->
-
-
       </div>
     </div>
   </body>
