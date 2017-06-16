@@ -1,4 +1,4 @@
-//business logic
+//Business logic
 
 function Pizza (argument1, argument2){
    this.size = argument1;
@@ -6,9 +6,19 @@ function Pizza (argument1, argument2){
    this.price = 10;
 }
 
+Pizza.prototype.howPizzaPriceChanges = function() {
+   if (this.size === "Medium - Best when shared with another") {
+     this.price /* += (this.toppings.length[]) */ ;
+   }else{
+     if (this.size === "Large - You better have some friends over") {
+       this.price += 5 /* += (this.toppings.length[]) */ ;
+     }
+   }
+   return this.price;
+ }
 
 
-// user interface logic
+// UI logic
 $(document).ready(function(){
   $("form#all-pizza-options").submit(function(event){
     event.preventDefault();
@@ -28,6 +38,9 @@ $(document).ready(function(){
 
     $(".size-output").append(myPizza.size);
     $(".toppings-output").append(myPizza.toppings);
+
+    $(".price-output").append(myPizza.howPizzaPriceChanges());
+
 
     $("#pizza-order-summary").show();
 
