@@ -13,7 +13,7 @@ This application is a demonstration of objects, constructors, and prototype meth
 |The user selects the pizza size and checks off the toppings desired and an order summary of their selections are displayed based on the inputs|Medium, Toppings: Tomatoes, Jalapenos|Order Summary:, Pizza Size: Medium, Toppings: Tomatoes, Jalapenos|
 |The user selects a medium pizza with no toppings and the order summary displays the pizza size and the base price of $10|Medium|Order Summary:, Pizza Size: Medium, Toppings:, Total Price: $10|
 |The user selects a large pizza with no toppings and the order summary displays the pizza size and the base price of $15|Large|Order Summary:, Pizza Size: Large, Toppings:, Total Price: $15|
-|The user selects the pizza size and checks off the toppings desired and a pizza price is calculated based on the number of toppings|Medium, Toppings: Tomatoes, Jalapenos|Order Summary:, Pizza Size: Medium, Toppings: Tomatoes, Jalapenos, Total Price: $12|
+|The user selects the pizza size and checks off the toppings desired and a pizza price is increased by $2 for each topping added|Medium, Toppings: Tomatoes, Jalapenos|Order Summary:, Pizza Size: Medium, Toppings: Tomatoes, Jalapenos, Total Price: $14|
 
 
 ## Setup

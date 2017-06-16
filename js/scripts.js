@@ -8,17 +8,14 @@ function Pizza (argument1, argument2){
 
 Pizza.prototype.howPizzaPriceChanges = function() {
    if (this.size === "Medium - Best when shared with another") {
-     this.price += 0 ;
+     this.price += (this.toppings.length * 2) ;
    }else{
      if (this.size === "Large - You better have some friends over") {
-       this.price += 5 ;
+       this.price += (5 + (this.toppings.length * 2)) ;
      }
    }
    return this.price;
  }
-
- //toppingsArrayLength (this.toppings.length())
-
 
 // UI logic
 $(document).ready(function(){
@@ -30,6 +27,7 @@ $(document).ready(function(){
     });
 
     var checkedSize = $("input[name='size-of-pizza']:checked").val();
+
     var arrayOfSelectedToppings = [];
     $("input:checkbox[name=toppings-on-pizza]:checked").each(function(){
       var selectedToppings = $(this).val();
