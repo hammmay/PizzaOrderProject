@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Nothing But Greens Pizza Shop</h2>
+      </div>
+
+<br>
+
+      <div>
+          <form id="pizza-prices">
+            <h4>Pick your Pizza Size</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size-of-pizza" value="medium" checked>
+                Medium (14 inch)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size-of-pizza" value="large">
+                Large (18 inch)
+              </label>
+            </div>
+<br>
+            <h4>What toppings do you want?</h4>
+            <div class="form-group">
+              <input type="checkbox" name="toppings" value="Sliced-Tomatoes"> Sliced Tomatoes
+              <input type="checkbox" name="toppings" value="Jalapenos"> Jalapenos
+            </div>
+<br>
+
+            <button type="submit" class="btn">Show Me The Price</button>
+
+          </form>
+
+          <span id="pizza-order-summary">
+            <h4><b>Order Summary:</b><h4>
+          </span>
+
+<!--      <ul id="prices">
+
+          </ul>
+-->
+
+
+      </div>
+    </div>
+  </body>
+</html>
