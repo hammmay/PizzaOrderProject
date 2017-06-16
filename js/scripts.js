@@ -7,11 +7,15 @@ function Pizza (argument1, argument2){
 }
 
 Pizza.prototype.howPizzaPriceChanges = function() {
+  if (this.size === "Small - Table for one") {
+    this.price += (this.toppings.length * 2) ;
+  }else{
    if (this.size === "Medium - Best when shared with another") {
-     this.price += (this.toppings.length * 2) ;
+     this.price += (5+ (this.toppings.length * 2)) ;
    }else{
      if (this.size === "Large - You better have some friends over") {
-       this.price += (5 + (this.toppings.length * 2)) ;
+       this.price += (10 + (this.toppings.length * 2)) ;
+       }
      }
    }
    return this.price;
