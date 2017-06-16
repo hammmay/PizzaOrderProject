@@ -10,7 +10,7 @@ This application is a demonstration of objects, constructors, and prototypes usi
 
 |Behavior - Plain English|Input|Output|
 |---|---|---|
-|The user selects the pizza size and checks off the toppings desired and a pizza price is displayed based on the inputs|Pizza Size: Medium, Toppings: Tomatoes, Jalapenos|$17|
+|The user selects the pizza size and checks off the toppings desired and a pizza price is displayed based on the inputs|Pizza Size: Medium, Toppings: Tomatoes, Jalapenos|$12|
 |The user selects the pizza size and checks off the toppings desired and a summary or their selections are displayed based on the inputs|Pizza Size: Medium, Toppings: Tomatoes, Jalapenos|Pizza Size: Medium, Toppings: Tomatoes, Jalapenos|
 
 
