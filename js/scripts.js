@@ -8,14 +8,16 @@ function Pizza (argument1, argument2){
 
 Pizza.prototype.howPizzaPriceChanges = function() {
    if (this.size === "Medium - Best when shared with another") {
-     this.price /* += (this.toppings.length[]) */ ;
+     this.price += 0 ;
    }else{
      if (this.size === "Large - You better have some friends over") {
-       this.price += 5 /* += (this.toppings.length[]) */ ;
+       this.price += 5 ;
      }
    }
    return this.price;
  }
+
+ //toppingsArrayLength (this.toppings.length())
 
 
 // UI logic
