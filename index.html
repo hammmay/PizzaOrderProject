@@ -20,21 +20,21 @@
             <h4>Pick your Pizza Size</h4>
             <div class="radio">
               <label>
-                <input type="radio" name="size-of-pizza" value="medium" checked>
+                <input type="radio" name="size-of-pizza" value="Medium - Best when shared with another" checked>
                 Medium (14 inch)
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="size-of-pizza" value="large">
+                <input type="radio" name="size-of-pizza" value="Large - You better have some friends over">
                 Large (18 inch)
               </label>
             </div>
 <br>
             <h4>What toppings do you want?</h4>
             <div class="form-group">
-              <input type="checkbox" name="toppings" value="Sliced-Tomatoes"> Sliced Tomatoes
-              <input type="checkbox" name="toppings" value="Jalapenos"> Jalapenos
+              <input type="checkbox" name="toppings-on-pizza" value="Sliced Tomatoes"> Sliced Tomatoes
+              <input type="checkbox" name="toppings-on-pizza" value="Jalapenos"> Jalapenos
             </div>
 <br>
 
@@ -42,9 +42,11 @@
 
           </form>
 
-          <span id="pizza-order-summary">
+          <div id="pizza-order-summary">
             <h4><b>Order Summary:</b><h4>
-          </span>
+              <p>Pizza Size: <span class="size-output"></span></p>
+              <p>Toppings: <span class="toppings-output"></span></p>
+          </div>
 
 <!--      <ul id="prices">
 
