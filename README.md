@@ -1,4 +1,4 @@
-##### Pizza Price Calculator
+# Pizza Price Calculator
 
 #### By Laura Hamilton
 
